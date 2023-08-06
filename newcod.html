@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newcod.css">
+    
+    <title>New Coordinator</title> 
+</head>
+<body>
+
+    <div class="form-container";>
+        <div class="date">
+        <form action="#">
+            <label for ="date">Date :</label>
+            <input type="date">
+            
+            
+        </form>
+    </div>
+    <br>
+        <div class="name">
+        <form action="$">
+            <label for ="name">Candidates : </label>
+            <input type="dropbox" >
+            
+        </form>
+    </div>
+    
+  <p id="demo" contentEditable="true">
+           <script>
+               const le=new Set(["Gender : Male","Admission no. : SV4554SDV "," Program : Btech"," Entry : Lateral","  Entrance Exam : 200"," Exam Board : ICSE","10th% : 78%"," Diploma/12th% : 75%"," Comments:It is good ","Faculty comments: Good ","Faculty comment : Selected ","Faculty comment(other place) :"]);
+
+               let text="";
+               for(const x of le.values()){
+                   text+=x+"<br>"+"<br>";
+               }
+               
+              
+            </script>
+            <button type="button"
+    onclick="document.getElementById('demo').innerHTML=text";>
+    Submit</button>
+               
+    </div>
+
+    
+</body>
+</html>

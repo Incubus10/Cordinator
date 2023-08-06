@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+    }
+  </script>
+
+  </head>
+<body>
+
+    <div class="form-container";>
+        <div class="date">
+        <form action="#">
+            <label for ="date">Date :</label>
+            <input type="date">
+            
+            
+        </form>
+
+  <form>
+    <label><b>Candidates Name:</b></label>
+    <input type="text" name="message" id="user_input">
+  </form>
+
+  <script src="myscripts.js"></script>
+  <input type="submit" onclick="showInput();"><br/>
+  <label>Your input: </label>
+  <p><span id='display'></span></p>
+</body>
+</html>
